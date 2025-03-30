@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ask Question</title>
+  <link rel="stylesheet" type="text/css" href="/static/templates/styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <form id="apiKeyForm" hidden="hidden">
+        <label for="apiKey">Enter API Key:</label>
+        <input type="text" id="apiKey" name="api_key" required>
+        <div id="errorMessage" class="error-message"></div>
+        <button type="submit" class="file-upload-btn">Submit</button>
+      </form>
+      <br>
+      <h3>Import File</h3>
+      <input type="file" id="fileInput" accept=".docx" multiple>
+      <div id="fileErrorMessage" class="error-message"></div>
+      <div id="uploadedFiles">
+        <h4>Uploaded Files</h4>
+      </div>
+
+      <br>
+      <button id="summarizeButton" class="summarize-btn">Summarize</button>
+    </div>
+
+    <div class="content">
+      <div class="chat-container">
+        <div class="chat-messages" id="chatMessages"></div>
+        <div class="chat-input">
+          <input type="text" id="chatInput" placeholder="Enter your question">
+          <button id="sendQuestionButton">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="/static/templates/script.js"></script>
+</body>
+</html>
