@@ -58,7 +58,7 @@ pillow==10.2.0
 pinecone-client==3.1.0
 plotly==5.19.0
 portalocker==2.10.1
-protobuf==5.29.4
+protobuf==5.29.5
 pyasn1==0.6.1
 pyasn1_modules==0.4.2
 pycparser==2.21
